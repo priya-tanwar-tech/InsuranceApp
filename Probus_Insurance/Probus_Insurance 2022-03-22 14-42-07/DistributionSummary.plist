@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Probus_Insurance.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>buildNumber</key>
+			<string>1</string>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>AFBA793826B4AB12C459F0406BC3E578926C0B5E</string>
+				<key>dateExpires</key>
+				<string>22/03/23</string>
+				<key>type</key>
+				<string>Apple Development</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>PRD7MAL224.techsoftjaipur.Car-insurance</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>PRD7MAL224</string>
+				<key>get-task-allow</key>
+				<true/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>PRD7MAL224.techsoftjaipur.Car-insurance</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>Probus_Insurance.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>1720b489-bd15-4f3e-8447-bd22a9bd5281</string>
+				<key>dateExpires</key>
+				<string>22/03/23</string>
+				<key>name</key>
+				<string>iOS Team Provisioning Profile: *</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>PRD7MAL224</string>
+				<key>name</key>
+				<string>Sankalp Agarwal</string>
+			</dict>
+			<key>versionNumber</key>
+			<string>1.0</string>
+		</dict>
+	</array>
+</dict>
+</plist>

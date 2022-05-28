@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="HealthEntries" id="gTV-IL-0wX" customClass="HealthEntries" customModule="Probus_Insurance" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="413" height="59"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="413" height="59"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xtj-jk-Q26">
+                        <rect key="frame" x="0.0" y="15" width="29.5" height="29.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Xtj-jk-Q26" secondAttribute="height" multiplier="1:1" id="Q3R-69-Bxh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                        <color key="textColor" red="0.090196078430000007" green="0.16862745100000001" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8BO-f4-HVD">
+                        <rect key="frame" x="29.5" y="0.0" width="373.5" height="59"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="avj-z7-kCn">
+                                <rect key="frame" x="0.0" y="0.0" width="118" height="59"/>
+                                <subviews>
+                                    <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Age*" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9u-ZD-Rum">
+                                        <rect key="frame" x="6" y="1.5" width="106" height="56"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                                        <color key="textColor" red="0.090196078430000007" green="0.16862745100000001" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="c9u-ZD-Rum" firstAttribute="width" secondItem="avj-z7-kCn" secondAttribute="width" multiplier="0.9" id="DKy-yB-649"/>
+                                    <constraint firstItem="c9u-ZD-Rum" firstAttribute="height" secondItem="avj-z7-kCn" secondAttribute="height" multiplier="0.95" id="KKo-Qq-grM"/>
+                                    <constraint firstItem="c9u-ZD-Rum" firstAttribute="centerX" secondItem="avj-z7-kCn" secondAttribute="centerX" id="fPe-IO-Ati"/>
+                                    <constraint firstItem="c9u-ZD-Rum" firstAttribute="centerY" secondItem="avj-z7-kCn" secondAttribute="centerY" id="wnh-TU-ZmM"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EiT-d7-hC0">
+                                <rect key="frame" x="128" y="0.0" width="117.5" height="59"/>
+                                <subviews>
+                                    <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Relation*" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wiA-tg-yDi">
+                                        <rect key="frame" x="5.5" y="1.5" width="106.5" height="56"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                                        <color key="textColor" red="0.090196078430000007" green="0.16862745100000001" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="wiA-tg-yDi" firstAttribute="centerY" secondItem="EiT-d7-hC0" secondAttribute="centerY" id="4Zd-fN-y5m"/>
+                                    <constraint firstItem="wiA-tg-yDi" firstAttribute="centerX" secondItem="EiT-d7-hC0" secondAttribute="centerX" id="88q-YB-LSh"/>
+                                    <constraint firstItem="wiA-tg-yDi" firstAttribute="width" secondItem="EiT-d7-hC0" secondAttribute="width" multiplier="0.9" id="KHl-gt-0eH"/>
+                                    <constraint firstItem="wiA-tg-yDi" firstAttribute="height" secondItem="EiT-d7-hC0" secondAttribute="height" multiplier="0.95" id="hD1-aw-lVn"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zl1-sS-rS3">
+                                <rect key="frame" x="255.5" y="0.0" width="118" height="59"/>
+                                <subviews>
+                                    <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Gender*" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jcu-HF-SBg">
+                                        <rect key="frame" x="6" y="1.5" width="106" height="56"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                                        <color key="textColor" red="0.090196078430000007" green="0.16862745100000001" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="jcu-HF-SBg" firstAttribute="width" secondItem="zl1-sS-rS3" secondAttribute="width" multiplier="0.9" id="1L9-pq-9pH"/>
+                                    <constraint firstItem="jcu-HF-SBg" firstAttribute="centerY" secondItem="zl1-sS-rS3" secondAttribute="centerY" id="FI4-cE-qo0"/>
+                                    <constraint firstItem="jcu-HF-SBg" firstAttribute="centerX" secondItem="zl1-sS-rS3" secondAttribute="centerX" id="NKI-kF-C6A"/>
+                                    <constraint firstItem="jcu-HF-SBg" firstAttribute="height" secondItem="zl1-sS-rS3" secondAttribute="height" multiplier="0.95" id="Xcu-Ao-LoH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="8BO-f4-HVD" firstAttribute="leading" secondItem="Xtj-jk-Q26" secondAttribute="trailing" id="1Qq-qn-p5z"/>
+                <constraint firstItem="Xtj-jk-Q26" firstAttribute="centerY" secondItem="8BO-f4-HVD" secondAttribute="centerY" id="2Zf-sJ-5sr"/>
+                <constraint firstItem="8BO-f4-HVD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="8bU-CR-Sm8"/>
+                <constraint firstItem="Xtj-jk-Q26" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.5" id="FkC-ya-Ihd"/>
+                <constraint firstAttribute="trailing" secondItem="8BO-f4-HVD" secondAttribute="trailing" constant="10" id="I7v-1c-syt"/>
+                <constraint firstAttribute="bottom" secondItem="8BO-f4-HVD" secondAttribute="bottom" id="Rib-St-NxZ"/>
+                <constraint firstItem="Xtj-jk-Q26" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="ZjI-Ba-det"/>
+            </constraints>
+            <size key="customSize" width="413" height="59"/>
+            <connections>
+                <outlet property="GenderLbl" destination="jcu-HF-SBg" id="fa4-Fi-env"/>
+                <outlet property="GenderView" destination="zl1-sS-rS3" id="Mia-y2-D8Y"/>
+                <outlet property="RelationLbl" destination="wiA-tg-yDi" id="Umu-ML-Dhc"/>
+                <outlet property="RelationView" destination="EiT-d7-hC0" id="FjD-Sf-TUv"/>
+                <outlet property="ageLbl" destination="c9u-ZD-Rum" id="QdL-L8-aEX"/>
+                <outlet property="ageView" destination="avj-z7-kCn" id="Tx0-rD-dko"/>
+                <outlet property="serialLbl" destination="Xtj-jk-Q26" id="Odq-2f-7A8"/>
+            </connections>
+            <point key="canvasLocation" x="155.79710144927537" y="13.727678571428571"/>
+        </collectionViewCell>
+    </objects>
+</document>

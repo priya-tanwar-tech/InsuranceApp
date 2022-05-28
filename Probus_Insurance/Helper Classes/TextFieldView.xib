@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2t3-Td-0Yn" customClass="TextFieldView" customModule="Probus_Insurance" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="112"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Total No of Adults* (2-8)" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cLq-Wt-cL3">
+                    <rect key="frame" x="0.0" y="5.5" width="414" height="101"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="textColor" red="0.090196078430000007" green="0.16862745100000001" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                </textField>
+                <label hidden="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total No of Adults* (2-8)" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4jI-nO-r8g">
+                    <rect key="frame" x="10" y="0.0" width="141" height="15"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                    <color key="textColor" red="0.4431372549" green="0.42352941179999998" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Esn-K9-fnz"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="cLq-Wt-cL3" firstAttribute="centerX" secondItem="2t3-Td-0Yn" secondAttribute="centerX" id="4TT-8Y-f28"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4jI-nO-r8g" secondAttribute="trailing" constant="20" symbolic="YES" id="KEl-Nc-XwP"/>
+                <constraint firstItem="cLq-Wt-cL3" firstAttribute="centerY" secondItem="2t3-Td-0Yn" secondAttribute="centerY" id="R15-al-PiW"/>
+                <constraint firstItem="cLq-Wt-cL3" firstAttribute="width" secondItem="2t3-Td-0Yn" secondAttribute="width" id="acO-LO-IWZ"/>
+                <constraint firstItem="4jI-nO-r8g" firstAttribute="top" secondItem="2t3-Td-0Yn" secondAttribute="top" id="bBS-cj-qky"/>
+                <constraint firstItem="4jI-nO-r8g" firstAttribute="leading" secondItem="2t3-Td-0Yn" secondAttribute="leading" constant="10" id="iTU-c2-O8P"/>
+                <constraint firstItem="cLq-Wt-cL3" firstAttribute="height" secondItem="2t3-Td-0Yn" secondAttribute="height" multiplier="0.9" id="nFs-Ae-ntx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="69.565217391304358" y="-270.53571428571428"/>
+        </view>
+    </objects>
+</document>

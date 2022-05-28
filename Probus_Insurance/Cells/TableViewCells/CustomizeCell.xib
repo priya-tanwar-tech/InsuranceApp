@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomizeCell" rowHeight="154" id="RU9-6R-oKF" customClass="CustomizeCell" customModule="ProbusInsuranceApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="489" height="154"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RU9-6R-oKF" id="k2b-Tw-Jpv">
+                <rect key="frame" x="0.0" y="0.0" width="489" height="154"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="80T-bf-xMG">
+                        <rect key="frame" x="0.0" y="0.0" width="489" height="154"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OGs-8j-wH4">
+                                <rect key="frame" x="10" y="31" width="92.5" height="92"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="OGs-8j-wH4" secondAttribute="height" id="xZy-mH-nUe"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gh1-2e-SJE">
+                                <rect key="frame" x="112.5" y="68.5" width="302.5" height="17.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="EQV-O5-Wue">
+                                <rect key="frame" x="425" y="61.5" width="51" height="31"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.85098039215686272" green="0.87058823529411766" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="onTintColor" red="0.0" green="0.72156862745098038" blue="0.80392156862745101" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="switchValueChanged:" destination="RU9-6R-oKF" eventType="valueChanged" id="uKN-lr-phT"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="EQV-O5-Wue" secondAttribute="trailing" constant="15" id="2yH-He-eCM"/>
+                            <constraint firstItem="EQV-O5-Wue" firstAttribute="centerY" secondItem="80T-bf-xMG" secondAttribute="centerY" id="51q-nl-bWF"/>
+                            <constraint firstItem="Gh1-2e-SJE" firstAttribute="trailing" secondItem="EQV-O5-Wue" secondAttribute="leading" constant="-10" id="9hU-zQ-WxF"/>
+                            <constraint firstItem="Gh1-2e-SJE" firstAttribute="leading" secondItem="OGs-8j-wH4" secondAttribute="trailing" constant="10" id="GZg-ST-lbo"/>
+                            <constraint firstItem="Gh1-2e-SJE" firstAttribute="centerY" secondItem="80T-bf-xMG" secondAttribute="centerY" id="T9S-RW-Ohf"/>
+                            <constraint firstItem="OGs-8j-wH4" firstAttribute="height" secondItem="80T-bf-xMG" secondAttribute="height" multiplier="0.6" id="aB6-yY-mSU"/>
+                            <constraint firstItem="OGs-8j-wH4" firstAttribute="leading" secondItem="80T-bf-xMG" secondAttribute="leading" constant="10" id="k77-n8-btj"/>
+                            <constraint firstItem="OGs-8j-wH4" firstAttribute="centerY" secondItem="80T-bf-xMG" secondAttribute="centerY" id="uub-OH-XSt"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="80T-bf-xMG" secondAttribute="trailing" id="39s-2Q-7na"/>
+                    <constraint firstAttribute="bottom" secondItem="80T-bf-xMG" secondAttribute="bottom" id="bJQ-sH-NwE"/>
+                    <constraint firstItem="80T-bf-xMG" firstAttribute="leading" secondItem="k2b-Tw-Jpv" secondAttribute="leading" id="dvv-Y7-aZT"/>
+                    <constraint firstItem="80T-bf-xMG" firstAttribute="top" secondItem="k2b-Tw-Jpv" secondAttribute="top" id="esb-tH-sVX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backView" destination="80T-bf-xMG" id="UBk-08-8a8"/>
+                <outlet property="imageVu" destination="OGs-8j-wH4" id="eZg-Kk-EES"/>
+                <outlet property="labelVu" destination="Gh1-2e-SJE" id="fQy-2n-biO"/>
+                <outlet property="switchBtn" destination="EQV-O5-Wue" id="FQf-b5-1AD"/>
+            </connections>
+            <point key="canvasLocation" x="203.62318840579712" y="28.794642857142854"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
